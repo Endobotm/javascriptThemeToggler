@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Theme Toggler</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .main1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+      }
+
+      button {
+        padding: 15px 40px;
+        border: none;
+        border-radius: 200px;
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-weight: 500;
+        margin: 15px;
+      }
+      #light {
+        background-color: white;
+        color: black;
+      }
+      #dark {
+        background-color: black;
+        color: white;
+      }
+      h1 {
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <div style="text-align: center">
+        <h1>Javascript Theme Toggler</h1>
+        <div class="buttons">
+          <button id="light">Light</button>
+          <button id="dark">Dark</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
